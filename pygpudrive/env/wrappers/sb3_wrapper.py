@@ -163,7 +163,7 @@ class SB3MultiAgentEnv(VecEnv):
         if done_worlds.any().item():
             self._update_info_dict(info, done_worlds)
             self.num_episodes += len(done_worlds)
-            self._env.sim.reset(done_worlds.toList())            
+            self._env.sim.reset(done_worlds.tolist())            
 
         # now construct obs after the reset
         obs = self._env.get_obs()

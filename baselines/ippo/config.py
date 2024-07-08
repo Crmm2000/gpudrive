@@ -13,7 +13,7 @@ class ExperimentConfig:
     train_on_k_unique_scenes: int = 10  # If generate_valid_json = True, generates a json file with k unique scenarios
 
     # BATCH SIZE / NUM WORLDS
-    num_worlds: int = 512
+    num_worlds: int = 45
 
     device: str = "cuda"
 
@@ -34,8 +34,8 @@ class ExperimentConfig:
         100  # how many trajectories we average logs over
     )
     log_freq: int = 100
-    project_name = "gpudrive"
-    group_name = "dc/paper_fig"
+    project_name = "gpudrive_benchmark"
+    group_name = "paper_fig"
     entity = "_emerge"
     tags = ["IPPO", "LATE_FUSION", "PERM_EQ"]
     wandb_mode = "online"
