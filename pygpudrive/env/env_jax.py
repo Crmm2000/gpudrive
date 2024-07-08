@@ -322,7 +322,7 @@ if __name__ == "__main__":
         config=env_config,
         num_worlds=NUM_WORLDS,
         max_cont_agents=MAX_NUM_OBJECTS,  # Number of agents to control
-        data_dir="example_data",
+        data_dir="data",
         device="cuda",
         render_config=render_config,
     )
@@ -344,5 +344,3 @@ if __name__ == "__main__":
         reward = env.get_rewards()
         done = env.get_dones()
         info = env.get_infos()
-
-        print(obs[env.cont_agent_mask].max())

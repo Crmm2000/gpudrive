@@ -1,14 +1,12 @@
-GPUDrive: Data-driven, multi-agent driving simulation at 1 million FPS
+GPUDrive
 ============================
 
-GPUDrive is a batched simulator of Nocturne, built on the [Madrona Engine](https://madrona-engine.github.io). It supports multiple worlds and multi-agent environments. Python bindings are available for seamless integration with RL algorithms.
+GPUDrive is a GPU-accelerated, multi-agent driving simulator that runs at 1 million FPS. The simulator is written in C++, built on top of the [Madrona Game Engine](https://madrona-engine.github.io). We provide gymnasium Python wrappers in `torch` and `jax`, allowing you to interface with the simulator in Python using your preferred framework.
 
 For more details, see our [paper]() and the [introduction tutorials](https://github.com/Emerge-Lab/gpudrive/tree/main/examples/tutorials), which guide you through the basic usage.
 
-
-
 <figure>
-<img src="data/gpudrive_gif_collage.gif" alt="...">
+<img src="docs/assets/gpudrive_gif_collage.gif" alt="...">
 <center><figcaption>Three example scenarios from a bird's eye view.</figcaption></center>
 </figure>
 
@@ -82,7 +80,7 @@ import gpudrive
 To get started, see our [intro tutorials](https://github.com/Emerge-Lab/gpudrive/tree/main/examples/tutorials). These tutorials take approximately 30-60 minutes to complete and will guide you through the dataset, simulator, and gymnasium wrappers.
 
 <p align="center">
-  <img src="data/navigation.png" width="350" title="Getting started">
+  <img src="docs/assets/navigation.png" width="350" title="Getting started">
 </p>
 
 
